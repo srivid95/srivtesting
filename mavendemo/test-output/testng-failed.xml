@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoketesting"/>
+        <include name="retesting"/>
+        <exclude name="sanitytesting"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Com.TestNG.Dependsongroups">
+        <methods>
+          <include name="search"/>
+        </methods>
+      </class> <!-- Com.TestNG.Dependsongroups -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
